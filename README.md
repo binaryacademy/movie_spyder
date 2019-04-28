@@ -21,6 +21,9 @@ url 地址以及需要爬取的内容，接着继续访问下一个页面的地�
 因为爬取出来评论数据都是一大串字符串，所以需要对每个句子进行分词，然后统计每个词语出现的评论。我采用 jieba 库来进行分词，然后使用WordCloud和matplotlib来可视化出词云图。
 
 
+## 使用
+- git clone git@github.com:binaryacademy/movie_spyder.git
+- 运行douban.py
 
 *  关注我们微信公众号，了解更多
 <div align="center">
