@@ -1,6 +1,12 @@
 # movie_spyder
 在豆瓣上爬取复联4电影评论，将词云图可视化出来。
 
+<div align="center">
+<img src="./f2.jpg" height="320" width="3200" >
+</div>
+
+
+
 ## 分析
 先通过影评网页确定爬取的内容。我要爬取的是用户名，是否看过，五星评论值，评论时间，有用数以及评论内容。
 
@@ -14,9 +20,7 @@
 ## 制作云图
 因为爬取出来评论数据都是一大串字符串，所以需要对每个句子进行分词，然后统计每个词语出现的评论。我采用 jieba 库来进行分词，然后使用WordCloud和matplotlib来可视化出词云图。
 
-<div align="center">
-<img src="./f2.jpg" height="160" width="160" >
-</div>
+
 
 *  关注我们微信公众号，了解更多
 <div align="center">
