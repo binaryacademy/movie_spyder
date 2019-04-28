@@ -2,7 +2,7 @@
 在豆瓣上爬取复联4电影评论，将词云图可视化出来。
 
 <div align="center">
-<img src="./f2.jpg" height="320" width="3200" >
+<img src="./f2.jpg" height="320" width="320" >
 </div>
 
 
