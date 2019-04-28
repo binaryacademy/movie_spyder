@@ -22,8 +22,8 @@ url 地址以及需要爬取的内容，接着继续访问下一个页面的地�
 
 
 ## 使用
-- git clone git@github.com:binaryacademy/movie_spyder.git
-- 运行douban.py
+- `git clone git@github.com:binaryacademy/movie_spyder.git`
+- 运行`douban.py`
 
 *  关注我们微信公众号，了解更多
 <div align="center">
