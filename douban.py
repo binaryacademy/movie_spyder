@@ -173,6 +173,6 @@ def wordcloudplot(txt):
     plt.show()
 
 if __name__ == '__main__':
-    #start_spider()
+    start_spider()
     result = split_word()
     wordcloudplot(result)
