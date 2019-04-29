@@ -11,7 +11,7 @@ from wordcloud import WordCloud
 import PIL
 import matplotlib.pyplot as plt
 import numpy as np
-
+import cv2
 
 
 def start_spider():
@@ -162,8 +162,10 @@ def split_word():
 def wordcloudplot(txt):
     path = './msyh.ttf'
     path.encode('gb18030')
-    alice_mask = np.array(PIL.Image.open('./f.jpg'))
-    wordcloud = WordCloud(font_path=path, background_color="white", margin=5, width=1800, height=800, mask=alice_mask, max_words=2000, max_font_size=60, random_state=42)
+    alice_mask = cv2.imread('./h.jpg')
+    alic = cv2.resize(alice_mask, (960, 900), interpolation=cv2.INTER_CUBIC)
+    print(alic.shape)
+    wordcloud = WordCloud(font_path=path, background_color="white", margin=5, width=1800, height=800, mask=alic, max_words=2000, max_font_size=60, random_state=42)
     wordcloud = wordcloud.generate(txt)
     wordcloud.to_file('./f2.jpg')
     plt.imshow(wordcloud)
